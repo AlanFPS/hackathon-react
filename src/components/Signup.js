@@ -1,5 +1,5 @@
 import React from "react";
-import validator from "validator";
+// import validator from "validator";
 import IconButton from "@material-ui/core/IconButton";
 import InputLabel from "@material-ui/core/InputLabel";
 import Visibility from "@material-ui/icons/Visibility";
@@ -55,7 +55,7 @@ const Signup = () => {
     <form onSubmit={checkFields} style={{ textAlign: "center" }}>
       <br />
       <div>
-        <InputLabel class="">Email</InputLabel>
+        <InputLabel className="">Email</InputLabel>
         <br />
         <Input
           type={values.showEmail ? "text" : "email"}
@@ -64,7 +64,7 @@ const Signup = () => {
         />
       </div>
       <div>
-        <InputLabel class="required">Username</InputLabel>
+        <InputLabel className="required">Username</InputLabel>
         <br />
         <Input
           onChange={(e) => setUsername(e.target.value)}
@@ -73,7 +73,7 @@ const Signup = () => {
         />
       </div>
       <div>
-        <InputLabel class="required" htmlFor="standard-adornment-password">
+        <InputLabel className="required" htmlFor="standard-adornment-password">
           Password
         </InputLabel>
         <br />

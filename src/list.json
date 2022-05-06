@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Driving",
+      "description": "Get in my car, start it and drive.",
+      "difficulty": 5,
+      "important": true,
+      "id": "1"
+    },
+    {
+      "title": "Eating",
+      "description": "Grab food, cook it, get a spoon and eat it.",
+      "difficulty": 3,
+      "important": true,
+      "id": "2"
+    },
+    {
+      "title": "Buy groceries",
+      "description": "5 eggs, cheese, veggies.",
+      "difficulty": 2,
+      "important": false,
+      "id": "3"
+    },
+    {
+      "title": "Study math",
+      "description": "Find books, research and take a look at class notes",
+      "difficulty": 7,
+      "important": true,
+      "id": "4"
+    }
+]
