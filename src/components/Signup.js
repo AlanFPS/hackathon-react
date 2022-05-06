@@ -56,7 +56,6 @@ const Signup = () => {
       <br />
       <div>
         <InputLabel className="">Email</InputLabel>
-        <br />
         <Input
           type={values.showEmail ? "text" : "email"}
           onChange={"email"}
@@ -64,8 +63,8 @@ const Signup = () => {
         />
       </div>
       <div>
-        <InputLabel className="required">Username</InputLabel>
         <br />
+        <InputLabel className="required">Username</InputLabel>
         <Input
           onChange={(e) => setUsername(e.target.value)}
           name="username"
@@ -73,10 +72,10 @@ const Signup = () => {
         />
       </div>
       <div>
+        <br />
         <InputLabel className="required" htmlFor="standard-adornment-password">
           Password
         </InputLabel>
-        <br />
         <Input
           type={values.showPassword ? "text" : "password"}
           onChange={handlePasswordChange("password")}
