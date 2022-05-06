@@ -1,38 +1,5 @@
-// function Checklist() {
-//   const toDoArray = ["Run", "Read", "Drive"];
-//   const IterateArrayWithChecklist = ({ arr }) => {
-//     return (
-//       <ol>
-//         {arr.map((arrayItem) => {
-//           return <ItemAndChecklist item={arrayItem} />;
-//         })}
-//       </ol>
-//     );
-//   };
-
-//   const ItemAndChecklist = (props) => {
-//     const [isComplete, setIsComplete] = React.useState(false);
-//     return (
-//       <div className="outer-box">
-//         <li style={{ color: isComplete ? "green" : "black" }}>{props.item}</li>
-//         <input
-//           type="checkbox"
-//           value={isComplete}
-//           onClick={() => setIsComplete(!isComplete)}
-//         />
-//       </div>
-//     );
-//   };
-
-//   return (
-//     <div>
-//       Checklist
-//       <IterateArrayWithChecklist arr={toDoArray} />
-//     </div>
-//   );
-// }
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import listJson from "../list.json";
 import RemoveBox from "./RemoveBox";
 

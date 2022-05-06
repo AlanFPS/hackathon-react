@@ -1,19 +1,47 @@
 import "./App.css";
-import Signup from "./components/Signup";
+// import Signup from "./components/Signup";
 import Checklist from "./components/Checklist";
+import { Routes, Route, Link } from "react-router-dom";
+
+// function App() {
+//   return (
+//     <div>
+//       <nav>
+//         <h1>Sign Up</h1>
+//         <Signup />
+//         <br />
+//         {/* <nav> */}
+//         <h1>To-do List</h1>
+//         {/* </nav> */}
+//         <Checklist />
+//       </nav>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
     <div>
-      <nav>
-        <h1>Sign Up</h1>
-        <Signup />
-        <br />
-        {/* <nav> */}
-        <h1>To-do List</h1>
-        {/* </nav> */}
-        <Checklist />
-      </nav>
+      <header>
+        <p>TO DO LIST MANAGER</p>
+        <nav>
+          <Link to="/">Go Home</Link>
+          {/* <Link to="/colors">Go to colors</Link> */}
+          {/* <Link to="/count">Go to Count</Link> */}
+          {/* <Link to="/signup">Go to Signup</Link> */}
+        </nav>
+      </header>
+
+      {/* npm i react-router-dom */}
+      <Routes>
+        {/* <Route path="/" element={<Hover />} /> */}
+        {/* <Route path="/greet/:name" element={<Greeting />} /> */}
+        {/* <Route path="/signup" element={<Signup />} /> */}
+        {/* <Route path="/count" element={<Count />} /> */}
+        <Route path="/colors" element={<Checklist />} />
+        {/* <Route path="/profile" element={<Profile />} /> */}
+        {/* <Route path="/*" element={<NotFound />} /> */}
+      </Routes>
     </div>
   );
 }
